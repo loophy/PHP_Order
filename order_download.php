@@ -24,6 +24,20 @@ else
 </head>
 <body>
 
+	<?php 
+	require_once('../common/common.php'); 
+	?>
+
+	ダウンロードしたい注文日を選んでください。<br />
+	<form action="order_download_done.php" method="post">
+		<?php pulldown_year(); ?>
+		年
+		<?php pulldown_month(); ?>
+		月
+		<?php pulldown_day(); ?>
+		日<br />
+		<input type="submit" value="ダウンロードへ">
+	</form>
 	
 
 </body>
